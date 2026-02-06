@@ -1,0 +1,13 @@
+# Compiled files
+bin/
+*.class
+
+# Serialized files
+*.ser
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
