@@ -9,10 +9,11 @@ import java.io.Serializable;
 
 // Transient is a keyword in java for skipping in serialization
 // to stop sending over network or save into db
-// fro security not a encryption
+// for security not a encryption
 
 class Book implements Serializable {
 	int id;
+	// not serialized due to transient
 	transient String Bookname;
 	transient double price;
 	
@@ -30,7 +31,7 @@ public class Transient {
 		// first create object
 		Book bk=new Book(11,"Lord",456.00);
 		
-	// Serialization
+	// 1.Serialization
 		
 		// second create one file 
 		// Creates a file where the serialized object will be stored.
@@ -51,9 +52,9 @@ public class Transient {
 		// Finalizes the file write.
 		oos.close();
 		
-		System.out.println(bk.Bookname);
+		
 
-	// DeSerialization
+	// 2.DeSerialization
 		
 		// 1. open file by fileinput
 		FileInputStream ifs=new FileInputStream("data.ser");
@@ -63,6 +64,7 @@ public class Transient {
 		
 		// 3. read stream and convert into object
 		Book bk1=(Book) ois.readObject();
+		
 		System.out.println(bk1.id);
 		System.out.println(bk1.Bookname);
 		System.out.println(bk1.price);

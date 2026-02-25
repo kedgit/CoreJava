@@ -41,7 +41,7 @@ public class Weighted_NOndirected_Graph_Using_ArrayList {
 		// if directed graph only
 		eweight.get(src).add(new Edge(dest,weight));
 		// if undirected then both
-		eweight.get(dest).add(new Edge(src,weight));
+		 eweight.get(dest).add(new Edge(src,weight));
 		
 	}
 	

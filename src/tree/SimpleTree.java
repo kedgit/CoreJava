@@ -12,7 +12,7 @@ class Node{
 	}
 }
 
- class FirstTreeNode {
+class FirstTreeNode {
 	
 	// root object
 	Node root;

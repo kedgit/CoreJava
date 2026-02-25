@@ -9,6 +9,7 @@ package Solid_Principles;
 
 
 // BAD Approach
+
 // first input device
 class KeyBoard{	
 	void type() {
